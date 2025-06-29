@@ -1,0 +1,252 @@
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #1e293b;
+  --accent-color: #38bdf8;
+  --text-color: #e2e8f0;
+  --bg-color: #0a0f1c;
+  --card-color: #1c2536;
+  --hover-bg: #334155;
+  --highlight: #16e0bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  color: #fff;
+  padding: 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  animation: slideDown 1s ease forwards;
+}
+
+header img {
+  width: 150px; /* Ajuste do tamanho do logo */
+  transform: rotate(0deg);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav.menu-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #1e293bcc;
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+nav.menu-fixed a {
+  display: block;
+  margin: 0.5rem 0;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav.menu-fixed a:hover {
+  color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card-link {
+  display: block;
+  background: var(--card-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, background 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.card-link:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: var(--hover-bg);
+  border-left: 4px solid var(--highlight);
+}
+
+.card-link h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.extra-info {
+  background-color: #0f172a;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--highlight);
+  box-shadow: 0 0 10px rgba(22, 224, 189, 0.3);
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+footer {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #334155;
+}
+
+h1 {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  background-color: var(--card-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  line-height: 1.6;
+}
+
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  header p {
+    font-size: 1rem;
+  }
+
+  nav.menu-fixed {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+  }
+
+  nav.menu-fixed a {
+    margin: 0;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  .card-link {
+    padding: 1.2rem;
+  }
+
+  .card-link h2 {
+    font-size: 1.4rem;
+  }
+}
+  .video-thumb {
+      display: block;
+      margin: 2rem 0;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .video-thumb:hover {
+      transform: scale(1.03);
+    }
+
+    .video-section {
+      margin-top: 3rem;
+    }
+
+    .video-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+      .curso-lista {
+      margin-top: 3rem;
+    }
+    .curso-lista h2 {
+      color: var(--accent-color);
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .curso-lista ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    .curso-lista li {
+      margin-bottom: 1rem;
+    }
+    .curso-lista a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    .curso-lista a:hover {
+      text-decoration: underline;
+    }

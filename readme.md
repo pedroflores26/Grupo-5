@@ -55,9 +55,9 @@ Cargos estratégicos que promovem inovação e governança:
 ## 🧪 Projetos Reais com essas Tecnologias
 
 - **Banco Itaú:** Implementou ITIL para melhorar o suporte e atendimento ao cliente.
-
-Link Do Projeto:https://pedroflores26.github.io/Grupo-5/
 - **Petrobras:** Utiliza ISO/IEC 27001 para garantir segurança da informação em seus sistemas.
 - **Magazine Luiza:** Estrutura de liderança digital com CDO e CIO para acelerar transformação digital.
 
 ---
+
+Link Do Projeto:https://pedroflores26.github.io/Grupo-5/
